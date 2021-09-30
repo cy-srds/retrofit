@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy contents to container
 COPY . .
 
-# Set environememnt variable
+# Set environnement variable
 ENV CY_GETLIBS_CACHE_PATH=/app/.modustoolbox
 ENV CY_TOOLS_PATHS=/app/ModusToolbox/tools_*
 
@@ -15,4 +15,4 @@ ENV CY_TOOLS_PATHS=/app/ModusToolbox/tools_*
 RUN bash setup_modustoolbox.sh
 
 # Run the startup command
-CMD ["echo", "Hello from Docker container!"]
+CMD ["echo", "Hello from the Docker container!"]

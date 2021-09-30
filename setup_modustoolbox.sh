@@ -16,7 +16,7 @@ curl --fail "-#" -O $MTB_INSTALL_URL
 tar -xzf $MTB_SETUP_FILE
 rm -f $MTB_SETUP_FILE
 
-# Run the rules require by ModusToolbox
+# Run the rules require by ModusToolbox (it makes more sense on a physical machine)
 MTB_TOOLS_VERSION=$(echo $MTB_SETUP_FILE | awk -F_ '{ print $2 }' | awk -F. '{ print $1"."$2 }')
 MTB_TOOLS_PATH=ModusToolbox/tools_$MTB_TOOLS_VERSION
 
