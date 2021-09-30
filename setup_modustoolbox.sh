@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-# Install prerequiste software
+# Install prerequisite software
 apt-get update
 apt-get upgrade -y
 apt-get install -y python3.7 python3-pip python3-dev python3-venv make curl git udev libusb-0.1-4 libglu1

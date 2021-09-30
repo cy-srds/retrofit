@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy contents to container
 COPY . .
 
-# Set environnement variable
+# Set environment variable
 ENV CY_GETLIBS_CACHE_PATH=/app/.modustoolbox
 ENV CY_TOOLS_PATHS=/app/ModusToolbox/tools_*
 
