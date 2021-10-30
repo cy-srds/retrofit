@@ -1,5 +1,5 @@
 # Base image to be used
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 # Set the working directory
 WORKDIR /app
