@@ -9,10 +9,12 @@ on:
 jobs:
   build:
 
-    runs-on: srikanthds/modustoolbox-container
+    runs-on: ubuntu-20.04
+    container:
+      image: srikanthds/modustoolbox-container
 
     steps:
     - uses: actions/checkout@v3
-    
+
     - name: Sanity Test
-      run: echo bash sanity_ci.sh
+      run: bash sanity_ci.sh

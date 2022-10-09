@@ -21,7 +21,7 @@
 # APPLICATION -- Top Level Makefile usually for multi project application
 # PROJECT     -- Project Makefile under Application
 #
-MTB_TYPE=COMBINED
+# MTB_TYPE=COMBINED
 
 # Target board/hardware (BSP).
 # To change the target, it is recommended to use the Library manager
