@@ -1,0 +1,18 @@
+name: Sanity
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: srikanthds/modustoolbox-container
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Sanity Test
+      run: echo bash sanity_ci.sh
