@@ -10,4 +10,4 @@ set -o pipefail
 
 export CyRemoteManifestOverride="https://raw.githubusercontent.com/Infineon/mtb-super-manifest/v2.X/mtb-super-manifest-fv2.xml"
 make getlibs
-make buiild -j$(nproc)
+make build
