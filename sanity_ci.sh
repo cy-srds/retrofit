@@ -26,9 +26,9 @@ cd zephyr-sdk-0.15.2
 ./setup.sh -t all -h -c
 cd ../IFX_Zephyr
 
-curl --fail "https://raw.githubusercontent.com/cy-srds/zephyr-example-capsense-buttons-slider/capsense-port-v1/CAPSENSE.yaml" -o zephyr/submanifests/CAPSENSE.yaml
+curl --fail "https://raw.githubusercontent.com/cy-srds/zephyr-example-filesystem-littlefs/develop/littlefs.yaml" -o zephyr/submanifests/littlefs.yaml
 west update
 
-west build -p always -b cy8cproto_062_4343w zephyr_example_capsense_buttons_slider
-sed -i "s,CONFIG_DEBUG_OPTIMIZATIONS,CONFIG_SIZE_OPTIMIZATIONS,g" zephyr_example_capsense_buttons_slider/prj.conf
-west build -p always -b cy8cproto_062_4343w zephyr_example_capsense_buttons_slider
+west build -p always -b cy8cproto_062_4343w zephyr_example_filesystem_littlefs
+echo "CONFIG_SIZE_OPTIMIZATIONS=y" >> zephyr_example_filesystem_littlefs/prj.conf
+west build -p always -b cy8cproto_062_4343w zephyr_example_filesystem_littlefs
